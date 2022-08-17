@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+$navbar-padding-y: 1.3rem;
+$btn-padding-x-lg: 3rem;
+$btn-padding-x-sm: .8rem;
+$btn-padding-x: 1.3rem;
+$primary: hsl(322, 100%, 66%);
+
+
+$font-family-sans-serif: 'Poppins', sans-serif;
+
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 1.6rem;
+}
+.countImg{
+    position: absolute;
+    top: -30%;
+    left: 34%;
+}
+.min-vh{
+    min-height: 80vh;
+}
+.navbar{
+    z-index: 1000;
+}
+.hero{
+    margin: 60px 0 100px 0;
+    padding: 7rem 0 0 0;
+}
+.scrollUp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 50px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .5s linear;
+    text-decoration: none;
+}
+.scrollUp:hover{
+    color: white;
+}
+.emailLabel{
+    display: none;
+}
+.social_icons i:hover{
+    color: hsl(322, 100%, 66%);
+    cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+    .hero{
+        padding: 3rem 0 0 0;
+    }
+}
